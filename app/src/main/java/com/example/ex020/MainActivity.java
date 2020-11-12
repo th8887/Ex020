@@ -8,12 +8,22 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ *@author Tahel Hazan <th8887@bs.amalnet.k12.il>
+ *@version	1.1
+ *@since 12.11.2020
+ *the user choses the type of the series and enters the first number,
+ * the "jumps" and goes to the second screen.
+ */
 public class MainActivity extends AppCompatActivity {
-    EditText jumps, first;
-
+    /**
+     * @param ty- the type of the series->
+     *          false->Invoice series
+     *          true->geometric series
+     */
+    EditText jumps,first;
     String f,j;
     boolean ty=false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //false-סדרה חשבונית
-//true- סדרה הנדסית
+    /**
+     * Next page.
+     * @param view the view
+     *takes the chosen parameters and goes to the second activity.
+     */
     public void nextPage(View view) {
         f=first.getText().toString();
         j=jumps.getText().toString();
@@ -40,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Type.
+     *
+     * @param view the view
+     * shows the type after the user chooses in the switch the type he wants.
+     */
     public void type(View view) {
         if(ty==false)
             ty=true;

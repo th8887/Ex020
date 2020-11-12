@@ -17,8 +17,8 @@ import android.widget.TextView;
  * @author Tahel Hazan <th8887@bs.amalnet.k12.il>
  * @version	1.1
  * @since 12.11.2020
- * the user choses the type of the series and enters the first number,
- * the "jumps" and goes to the second screen.
+ * calculates the numbers for each item' shows in the array and the user can choose to know the position
+ * of the sum until the chosen item.
  */
 public class numberList extends AppCompatActivity implements AdapterView.OnItemClickListener,
         View.OnCreateContextMenuListener{
