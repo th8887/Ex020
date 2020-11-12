@@ -18,8 +18,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     /**
      * @param ty- the type of the series->
-     *          false->Invoice series
-     *          true->geometric series
+     * false->Invoice series
+     * true->geometric series
      */
     EditText jumps,first;
     String f,j;
